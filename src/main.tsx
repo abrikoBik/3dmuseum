@@ -8,11 +8,11 @@ import Home from './Home.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
+    <Router basename="3dmuseum">
       <Routes>
         <Route path="/spy" element={<Spy/>}/>
         <Route path="/space" element={<Space/>}/>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/3dmuseum" element={<Home/>}/>
       </Routes>
     </Router>
   </StrictMode>,
